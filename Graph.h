@@ -6,11 +6,13 @@ class Graph
 {
 private:
 	Nodeptr* HeadNode;
+	bool* visited;
 	int size;
 public:
 	Graph(int);
 	void insertEdge(int u, int v);
 	void print();
-	DFS();
+	void DFS(int);
+	void BFS(int);
 };
 
